@@ -1,0 +1,178 @@
+.contact-section {
+  padding: 50px 8%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.contact-title h5 {
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Form area */
+.contact-form {
+  flex: 1 1 60%;
+  background: #f0f8f6;
+  padding: 20px;
+  border: 2px solid #cde2dc;
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  border: none;
+  background: #e9f3f0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.send-btn {
+  background: #2bb673;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #23985f;
+}
+
+/* Right address box */
+.contact-info {
+  flex: 1 1 35%;
+  background: #eaf3f0;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.logo-companies2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background: #fff;
+}
+
+.logos2, .logos22 {
+  flex: 0 1 auto;
+}
+
+.logo-companies2 img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.logo-companies2 img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .logo-companies2 {
+    gap: 40px;
+  }
+
+  .logo-companies2 img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-companies2 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .logo-companies2 img {
+    width: 110px;
+  }
+}
