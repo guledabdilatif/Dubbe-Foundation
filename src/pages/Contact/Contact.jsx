@@ -6,6 +6,7 @@ import pic10 from "../../assets/logo1.png"
 import pic11 from "../../assets/logo2.png"
 import pic12 from "../../assets/logo3.png"
 import pic13 from "../../assets/logo4.png"
+import { colors } from '../../constant/colors'
 const Contact = () => {
   return (
     <>
@@ -22,7 +23,7 @@ const Contact = () => {
 
       <div className="contact-container">
         {/* Left form */}
-        <form className="contact-form">
+        <form className="contact-form" style={{border:"1px solid rgb(31, 140, 68)"}}>
           <div className="form-row">
             <div className="form-group">
               <label>Fast name</label>
@@ -50,7 +51,7 @@ const Contact = () => {
             <textarea placeholder="Type Your Massage Here..."></textarea>
           </div>
 
-          <button type="submit" className="send-btn">Send Massage</button>
+          <button type="submit" className="send-btn" style={{background:colors.secondary}}>Send Massage</button>
         </form>
 
         {/* Right address box */}

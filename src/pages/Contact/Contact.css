@@ -26,9 +26,8 @@
 /* Form area */
 .contact-form {
   flex: 1 1 60%;
-  background: #f0f8f6;
+ 
   padding: 20px;
-  border: 2px solid #cde2dc;
   border-radius: 4px;
 }
 
@@ -153,6 +152,7 @@ textarea {
   opacity: 1;
   transform: scale(1.05);
 }
+
 
 /* Responsive behavior */
 @media (max-width: 900px) {

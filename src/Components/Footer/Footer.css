@@ -1,0 +1,18 @@
+.footer-link {
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: rgb(237, 29, 129); /* tertiary */
+  }
+  
+  /* Social icon hover — now pink */
+  .social-icon:hover {
+    background-color: rgb(237, 29, 129) !important; /* tertiary */
+    color: #fff !important;
+    transform: translateY(-3px);
+  }
+  .white-logo {
+    filter: brightness(0) invert(1);
+  }
+  
