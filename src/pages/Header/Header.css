@@ -7,3 +7,42 @@ header{
     background-repeat: no-repeat;
 
 }
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-section .small-text {
+    color: #a3e4d7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .btn-donate {
+    background-color: #00b894; /* energetic fuel-like green */
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-donate:hover {
+    background-color: transparent !important;
+    color: #fff;
+    border: 1.3px solid green !important;
+  }
+  
+  .btn-outline-light {
+    border: 2px solid #a3e4d7;
+    color: #a3e4d7;
+    font-weight: 600;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #a3e4d7;
+    color: #1b1b1b;
+  }
+  

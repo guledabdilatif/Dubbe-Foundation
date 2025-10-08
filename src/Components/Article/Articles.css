@@ -1,0 +1,8 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn-outline-success:hover{
+color: white !important;
+font-weight: bolder;
+}

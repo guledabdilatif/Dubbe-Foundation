@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import logo from '/logo.png';
 import { colors } from '../../constant/colors';
 import { Heart } from 'lucide-react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbar.css';
 const Navbar = () => {
   return (
-    <div style={{position:'fixed', top:0, right:0, left:0}}>
+    <div style={{ position: 'fixed', top: 0, right: 0, left: 0, zIndex: 1001 }}>
       <nav
         className="navbar navbar-expand-lg shadow-sm py-3 px-3"
-        style={{ backgroundColor: 'white', color:colors.black }}
+        style={{ backgroundColor: 'white', color: colors.black }}
       >
         <div className="container-fluid">
           {/* Logo */}
@@ -30,14 +32,13 @@ const Navbar = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style={{ backgroundColor: colors.secondary }}
+            style={{ backgroundColor: colors.secondary, color: 'white', outline: 'none' }}
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon text-light"></span>
           </button>
-
           {/* Links */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
               {['Home', 'About', 'Blog', 'Contact'].map((item) => (
                 <li className="nav-item" key={item}>
                   <Link
@@ -50,16 +51,17 @@ const Navbar = () => {
               ))}
             </ul>
 
+
             {/* Donate Button */}
             <Link
               to="/donate"
               className="btn fw-bold text-light  px-4 py-2"
               style={{
                 backgroundColor: colors.tertiary,
-               
+
               }}
             >
-              <Heart/> Donate
+              <Heart /> Donate
             </Link>
           </div>
         </div>
