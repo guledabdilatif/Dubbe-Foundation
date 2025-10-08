@@ -19,9 +19,9 @@ const Header = () => {
               We Seek Out World Changers And Difference Makers Around The Globe,<br />
               And Equip Them To Fulfill Their Unique Purpose.
             </p>
-            <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex header-btn justify-content-center gap-3">
               <Link to={"/donate"} class="btn btn-donate px-4 py-2" style={{ background: colors.secondary, color: 'white' }}>Donate Now</Link>
-              <a href="#" class="btn btn-outline-light px-4 py-2">Know About Us</a>
+              <Link to={"/about"} class="btn btn-outline-light px-4 py-2">Know About Us</Link>
             </div>
           </div>
         </section>

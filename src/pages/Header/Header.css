@@ -43,6 +43,12 @@ header{
   
   .btn-outline-light:hover {
     background-color: #a3e4d7;
-    color: #1b1b1b;
+    color: #1b1b1b !important;
   }
-  
+  @media (max-width:900px) {
+    .header-btn{
+      flex-direction: column !important;
+      display: flex;
+    }
+    
+  }
