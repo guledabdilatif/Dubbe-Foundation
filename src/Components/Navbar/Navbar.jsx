@@ -55,7 +55,7 @@ const Navbar = () => {
             {/* Donate Button */}
             <Link
               to="/donate"
-              className="btn fw-bold text-light  px-4 py-2"
+              className="btn fw-bold text-light  px-2 py-1"
               style={{
                 backgroundColor: colors.tertiary,
 
